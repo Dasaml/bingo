@@ -556,19 +556,21 @@ body.maxa-bingo-2026 {
 }
 .maxa-bingo-2026 .carousel-container {
   width: 100%;
-  max-width: 1070px;
-  margin: 0 auto;
-  overflow: hidden;
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0 auto;
 }
 .maxa-bingo-2026 .carousel-track {
   display: flex;
   transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
+  width: 100%;
 }
 .maxa-bingo-2026 .carousel-slide {
   flex: 0 0 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   padding: 0;
 }
 .maxa-bingo-2026 .carousel-slide img {
