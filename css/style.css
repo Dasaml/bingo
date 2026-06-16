@@ -1,0 +1,1092 @@
+@font-face {
+	font-family: "Maxa Grotesk"; 
+	src: url("../fonts/Maxa-Grotesk-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "Maxa Grotesk"; 
+	src: url("../fonts/Maxa-Grotesk-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@keyframes blowSteam {
+    0% {
+        transform: translateY(0) translateX(0) scale(0.4);
+        opacity: 0;
+    }
+    18% {
+        opacity: 0.85;
+        transform: translateY(-10px) translateX(-5px) scale(1.1);
+    }
+    60% {
+        opacity: 0.98;
+        transform: translateY(-60px) translateX(-50px) scale(2.4);
+    }
+    82% {
+        opacity: 0.55;
+        transform: translateY(-110px) translateX(-100px) scale(3.2);
+    }
+    100% {
+        transform: translateY(-150px) translateX(-140px) scale(4);
+        opacity: 0;
+        filter: blur(16px);
+    }
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-x:hidden;
+}
+body.maxa-bingo-2026 {
+	display: block;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Maxa Grotesk", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+	font-weight: 500;
+	font-style: normal;
+	line-height: 23px;
+	color: #000;
+	background-color: #500cba;
+	scroll-behavior: smooth;
+}
+.maxa-bingo-2026 .title-h1 {
+	color: #ffffff;
+	font-size: 1.4rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: 1.4;
+	max-width: 450px;
+	margin: 0 0 5px;
+}
+.maxa-bingo-2026 .title-h2 {
+	color: #ffe103;
+	font-size: 3rem;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 1.1;
+	margin: 0;
+	max-width: 100%;
+}
+.maxa-bingo-2026 .hero-date {
+	color: #ffe103;
+	font-size: 2rem;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 1.1;
+	text-transform: uppercase;
+	margin: 0 0 25px;
+	max-width: 100%;
+}
+.maxa-bingo-2026 .title-h3 {
+	color: #ffe103;
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	margin: 0;
+}
+.maxa-bingo-2026 p {
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.6;
+	margin: 1em 0;
+}
+.maxa-bingo-2026 a {
+	text-decoration: none;
+	outline: none;
+	color: #ffffff;
+}
+.maxa-bingo-2026 img {
+	color: #ffffff;
+}
+.maxa-bingo-2026 .section.bg-gradient-1 {
+	background: rgb(96,0,191);
+	background: linear-gradient(101deg, rgba(96,0,191,1) 4%, rgba(255,93,126,1) 100%);
+}
+.maxa-bingo-2026 .section.bg-gradient-2 {
+	background: rgb(255,93,126);
+	background: linear-gradient(101deg, rgba(255,93,126,1) 4%, rgba(96,0,191,1) 100%);
+}
+.maxa-bingo-2026 .container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.maxa-bingo-2026 .pb-05 {
+	padding-bottom: .5em;
+}
+.maxa-bingo-2026 .pl-2 {
+	padding-left: 0;
+}
+.maxa-bingo-2026 .pt-1-5 {
+	padding-top: 1.5em;
+}
+.maxa-bingo-2026 .mb-0 {
+	margin-bottom: 0;
+}
+.maxa-bingo-2026 .py-2 {
+	padding: 2em 0;
+}
+.maxa-bingo-2026 .py-3 {
+	padding: 3em 0;
+}
+.maxa-bingo-2026 .pb-3 {
+	padding-bottom: 3em;
+}
+.maxa-bingo-2026 .py-2-pb-0 {
+	padding: 2em 0 0;
+}
+.maxa-bingo-2026 .p-1 {
+	padding: 1em 1.25em;
+}
+.maxa-bingo-2026 .text-center {
+	text-align: center;
+}
+/* Site header */
+.maxa-bingo-2026 .site-header {
+	width: 100%;
+	height: 90px;
+	margin: 0 auto;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background-color: #500cba;
+}
+/* Site header end */
+/* Mobile menu */
+.maxa-bingo-2026 .menuItem {
+	display: block;
+	margin: 2rem 1.5rem;
+}
+.maxa-bingo-2026 .menuItem:hover {
+	text-decoration: underline;
+}
+.maxa-bingo-2026 .menuItem.registration-nav {
+	display: inline-block;
+    margin: 0 1.5rem 2em;
+    padding: .5em;
+	background-color: #cf4194;
+}
+.maxa-bingo-2026 .hamburger {
+	position: relative;
+	z-index: 100;
+	top: 0;
+	right: 0;
+	padding: 4px;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+.maxa-bingo-2026 .material-icons {
+	color: #fff;
+}
+.maxa-bingo-2026 .closeIcon {
+	display: none;
+}
+.maxa-bingo-2026 .menu {
+	display: none;
+	position: absolute;
+	top: 90px;
+	left: 0;
+	right: 0;
+	transition: transform 0.2s;
+	z-index: 99;
+	background: #500cba;
+	color: #fff;
+	list-style: none;
+	padding-top: 4rem;
+}
+.maxa-bingo-2026 .showMenu {
+	display: block;
+}
+.maxa-bingo-2026 .navigation-wrapper-mobile {
+	display: block;
+}
+.maxa-bingo-2026 .navigation-wrapper-mobile .navigation-modify-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	padding: 1em;
+}
+.maxa-bingo-2026 .navigation-wrapper-mobile .logo-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 15px;
+}
+.maxa-bingo-2026 .navigation-wrapper-mobile .logo-mobile-inner .logo-top img {
+	width: 100px;
+	height: auto;
+}
+.maxa-bingo-2026 .navigation-wrapper-mobile nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+.maxa-bingo-2026 .navigation-wrapper-mobile ul {
+	margin: 0;
+	padding: 0;
+}
+/* Mobile menu end */
+/* Desktop menu */
+.maxa-bingo-2026 .navigation-wrapper-desktop .logo-top img {
+	width: 150px;
+	height: auto;
+}
+.maxa-bingo-2026 .navigation-wrapper-desktop {
+	display: none;
+}
+.maxa-bingo-2026 .navigation-wrapper-desktop .navigation-modify-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 30px;
+	width: 100%;
+}
+
+.maxa-bingo-2026 .navigation-wrapper-desktop ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	gap: 13px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+}
+.maxa-bingo-2026 .navigation-wrapper-desktop nav a,
+.maxa-bingo-2026 .navigation-wrapper-mobile nav a {
+	position: relative;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.5;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.maxa-bingo-2026 .navigation-wrapper-desktop nav a:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #ffffff;
+	bottom: 0;
+	left: 0;
+	-webkit-transform-origin: right;
+	-ms-transform-origin: right;
+	transform-origin: right;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: -webkit-transform .3s ease-in-out;
+	transition: -webkit-transform .3s ease-in-out;
+	-o-transition: transform .3s ease-in-out;
+	transition: transform .3s ease-in-out;
+	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+.maxa-bingo-2026 .navigation-wrapper-desktop nav a:hover:before {
+	-webkit-transform-origin: left;
+	-ms-transform-origin: left;
+	transform-origin: left;
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+}
+.maxa-bingo-2026 .navigation-wrapper-desktop nav .registration-nav {
+	background-color: #cf4194;
+	padding: .5em;
+}
+/* Desktop menu end */
+.maxa-bingo-2026 .top-banner-image {
+	position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.maxa-bingo-2026 .top-img-mobile {
+	display: block;
+	width: 100%;
+	max-width: 580px;
+	height: auto;
+}
+.maxa-bingo-2026 .steam-animation-mobile {
+    position: absolute;
+    top: 33%;
+    left: 57%;
+    width: 40px;
+    height: 20px;
+    z-index: 10;
+    pointer-events: none;
+}
+.maxa-bingo-2026 .steam-animation-mobile::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    filter: blur(8px);
+    animation: blowSteam 4s infinite ease-out;
+}
+.maxa-bingo-2026 .site-main {
+	position: relative;
+}
+.maxa-bingo-2026 .section {
+	width: 100%;
+	max-width: 100%;
+	scroll-margin-top: 5em;
+}
+.maxa-bingo-2026 .bingo-90 {
+	margin-top: 0;
+	padding-bottom: 3em;
+}
+.maxa-bingo-2026 .bingo-box-content {
+	width: 100%;
+}
+.maxa-bingo-2026 .bingo-box-img-win {
+	width: 200px;
+	height: auto;
+}
+.maxa-bingo-2026 .bingo-box-img {
+	width: 100px;
+	height: auto;
+}
+.maxa-bingo-2026 .top-banner {
+	position: relative;
+	padding: 0;
+	background-image: url("../img/hlavni-obrazek-plaz.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.maxa-bingo-2026 .bingo-box-wrapper-top {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 3em 0 0;
+	background-image: none;
+}
+.maxa-bingo-2026 .top-banner-media-desktop {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	pointer-events: none;
+	z-index: 2;
+}
+.bull-steam-emitter {
+	display: none;
+	position: absolute;
+	top: 181px;
+	right: 137px;
+	width: 65px;
+	height: 25px;
+	pointer-events: none;
+	z-index: 11;
+}
+.steam {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: rgba(255, 255, 255, 0.98);
+	border-radius: 50%;
+	filter: blur(4px);
+	opacity: 0;
+	box-shadow: 
+	inset -2px -2px 6px rgba(0, 0, 0, 0.15),
+	0 10px 25px rgba(0, 0, 0, 0.35);
+}
+.steam-left {
+    left: 0;
+    animation: blowSteam 3.8s infinite ease-in-out;
+}
+.steam-right {
+    right: 0;
+    animation: blowSteam 3.8s infinite ease-in-out;
+}
+.badge-velky-dobry {
+	position: absolute;
+    right: 10%;
+    bottom: 5%;
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    z-index: 10;
+}
+
+.maxa-bingo-2026 .top-banner-content {
+	position: relative;
+	z-index: 5;
+	padding: 0 20px;
+	max-width: 560px;
+}
+.top-banner-content::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 120%;
+	height: 120%;
+	background: #541da8;
+	border-radius: 50%;
+	filter: blur(80px);
+	z-index: -1;
+	opacity: 0.9;
+	pointer-events: none;
+}
+.maxa-bingo-2026 .top-banner-image {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.maxa-bingo-2026 .action-bar {
+	padding: 50px 0;
+}
+.maxa-bingo-2026 .action-bar-inner {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.maxa-bingo-2026 .action-bar-inner .btn-action {
+	background-color: #f0e95e;
+	border-width: 0;
+	min-width: 180px;
+	border-radius: 38px;
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	-moz-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	color: #500cba;
+	padding: 15px 45px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	cursor: pointer;
+	opacity: 1;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.maxa-bingo-2026 .btn-action:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+}
+.maxa-bingo-2026 .winning-shapes-section {
+  width: 100%;
+  background-color: #f0e95e;
+  padding: 40px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.maxa-bingo-2026 .shapes-title {
+  font-size: 1.8rem;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #500cba;
+  text-transform: uppercase;
+  margin: 0 0 30px;
+}
+.maxa-bingo-2026 .carousel-container {
+  width: 100%;
+  max-width: 1070px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.maxa-bingo-2026 .carousel-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
+}
+.maxa-bingo-2026 .carousel-slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.maxa-bingo-2026 .carousel-slide img {
+	display: block;
+	max-width: 95%;
+	height: auto;
+}
+.maxa-bingo-2026 .carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+.maxa-bingo-2026 .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #bfa6ff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.maxa-bingo-2026 .dot.active {
+  background-color: #4a00b6;
+}
+.maxa-bingo-2026 .games-jackpots-section {
+  width: 100%;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+.maxa-bingo-2026 .games-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.maxa-bingo-2026 .game-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	max-width: 280px;
+	padding: 0 0 30px;
+}
+.maxa-bingo-2026 .game-image-wrapper {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.maxa-bingo-2026 .game-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+}
+.maxa-bingo-2026 .game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.maxa-bingo-2026 .game-jackpot-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.maxa-bingo-2026 .game-jackpot-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #eaf625;
+  margin-bottom: 35px;
+  white-space: nowrap;
+}
+.maxa-bingo-2026 .btn-play {
+	background-color: #f0e95e;
+	border-width: 0;
+	min-width: 180px;
+	border-radius: 38px;
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(57, 55, 61, 1);
+	-moz-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	box-shadow: 0px 10px 15px 0px rgba(57, 55, 61, 1);
+	color: #500cba;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	cursor: pointer;
+	opacity: 1;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.maxa-bingo-2026 .btn-play:hover {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.maxa-bingo-2026 .bingo-90 .bingo-box-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	margin: 0 auto;
+	padding: 1em 1.25em 2em;
+}
+.maxa-bingo-2026 .bingo-win .bingo-box-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.maxa-bingo-2026 .top-banner .bingo-box-wrapper,
+.maxa-bingo-2026 .bingo-75 .bingo-box-wrapper,
+.maxa-bingo-2026 .bingo-registrace .bingo-box-wrapper,
+.maxa-bingo-2026 .bingo-chat .bingo-box-wrapper,
+.maxa-bingo-2026 .bingo-stream .bingo-box-wrapper,
+.maxa-bingo-2026 .bingo-tutorials .bingo-box-wrapper,
+.maxa-bingo-2026 .bingo-videos .bingo-box-wrapper,
+.maxa-bingo-2026 .bingo-jackpot .bingo-box-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+.maxa-bingo-2026 .bingo-tutorials .text-image-inner,
+.maxa-bingo-2026 .bingo-videos .text-image-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 4em 0 0;
+}
+.maxa-bingo-2026 .registration-terms-link {
+	color: #ffe103;
+	text-decoration: none;
+}
+.maxa-bingo-2026 .registration-terms-link:hover {
+	text-decoration: underline;
+}
+.maxa-bingo-2026 .bingo-button {
+	background-color: #f0e95e;
+	border-width: 0;
+	min-width: 180px;
+	border-radius: 38px;
+	-webkit-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	-moz-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
+	color: #8d3ddc;
+	padding: 15px 40px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	cursor: pointer;
+	opacity: 1;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.maxa-bingo-2026 .bingo-button:hover {
+	transform: translateY(2px);
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+}
+.maxa-bingo-2026 .bingo-btn-wrapper {
+	margin: 0 auto;
+}
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.maxa-bingo-2026 .bingo-btn {
+	padding: 3em 0;
+}
+.maxa-bingo-2026 .tutorials-col-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	gap: 30px;
+}
+.maxa-bingo-2026 .tutorials-col-inner .col {
+	width: 100%;
+}
+.maxa-bingo-2026 .iframe-set {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 16 / 9;
+	border: 0;
+	overflow: hidden;
+}
+.maxa-bingo-2026 .site-footer {
+	display: block;
+	padding: 2em 1em;
+	margin: 0 auto;
+	max-width: 950px;
+	text-align: center;
+}
+.maxa-bingo-2026 .site-footer a {
+	display: inline-block;
+}
+.maxa-bingo-2026 .footer-logo {
+	width: 150px;
+	height: auto;
+}
+.maxa-bingo-2026 .warning-img-mobile {
+	display: block;
+	height: auto;
+	width: 100%;
+	font-size: 13px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.1;
+}
+.maxa-bingo-2026 .warning-img-desktop {
+	display: none;
+	height: 40px;
+	width: auto;
+	font-size: 13px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 1.6;
+}
+.maxa-bingo-2026 .copyright {
+	font-size: .9rem;
+}
+.maxa-bingo-2026 .bingo-preferences-center {
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 400;
+	text-decoration: none;
+	padding: 1em 0 0;
+}
+.maxa-bingo-2026 .bingo-preferences-center:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+@media (min-width: 480px) {
+  .maxa-bingo-2026 .games-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 30px;
+  }
+  .maxa-bingo-2026 .game-card {
+    width: calc(50% - 20px);
+    max-width: 240px;
+  }
+  
+}
+
+@media(min-width: 768px) {
+	.maxa-bingo-2026 .pl-2 {
+		padding-left: 2em;
+	}
+	.maxa-bingo-2026 .pt-1-5 {
+		padding-top: 0;
+	}
+	.maxa-bingo-2026 .p-1 {
+		padding: 1em;
+	}
+	.maxa-bingo-2026 .title-h1 {
+		font-size: 2.3rem;
+		margin: 0;
+	}
+	.maxa-bingo-2026 .title-h2 {
+		font-size: 6rem;
+	}
+	.maxa-bingo-2026 .hero-date {
+		font-size: 4.3rem;
+	}
+	.maxa-bingo-2026 .action-bar-inner {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+	}
+	
+	.maxa-bingo-2026 .shapes-title {
+		font-size: 2.2rem;
+		margin: 0 0 30px;
+	}
+	.maxa-bingo-2026 .winning-shapes-section {
+		padding: 60px 0;
+	}
+	.maxa-bingo-2026 .games-jackpots-section {
+		padding: 60px 0;
+	}
+	.maxa-bingo-2026 .game-card {
+		width: calc(33.33% - 20px); 
+		padding: 0;
+	}
+	.maxa-bingo-2026 .bingo-button {
+		letter-spacing: 4px;
+		padding: 15px 45px;
+	}
+	.maxa-bingo-2026 .navigation-wrapper-desktop ul {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.maxa-bingo-2026 .bingo-90 {
+		margin-top: 0em;
+	}
+	.maxa-bingo-2026 .bingo-box-img-win {
+		width: 300px;
+	}
+	.maxa-bingo-2026 .bingo-box-img {
+		width: 150px;
+	}
+	
+	.maxa-bingo-2026 .bingo-win .bingo-box-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.maxa-bingo-2026 .bingo-90 .bingo-box-wrapper {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		padding: 1em;
+	}
+	.maxa-bingo-2026 .bingo-75 .bingo-box-wrapper,
+	.maxa-bingo-2026 .bingo-registrace .bingo-box-wrapper,
+	.maxa-bingo-2026 .bingo-chat .bingo-box-wrapper,
+	.maxa-bingo-2026 .bingo-stream .bingo-box-wrapper,
+	.maxa-bingo-2026 .bingo-tutorials .bingo-box-wrapper,
+	.maxa-bingo-2026 .bingo-videos .bingo-box-wrapper,
+	.maxa-bingo-2026 .bingo-jackpot .bingo-box-wrapper {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.maxa-bingo-2026 .tutorials-col-inner {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.maxa-bingo-2026 .warning-img-mobile {
+		display: none;
+	}
+	.maxa-bingo-2026 .warning-img-desktop {
+		display: block;
+	}
+}
+@media(min-width: 992px) {
+	.bull-steam-emitter {
+		display: block;
+	}
+	.maxa-bingo-2026 .bingo-box-wrapper-top {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding: 4em 0 4.5em;
+		background-image: url("../img/obrazek-byk.webp");
+		background-repeat: no-repeat;
+		background-size: 50%;
+		background-position: right bottom;
+	}
+	.maxa-bingo-2026 .top-banner-image {
+		display: none;
+	}
+	.badge-velky-dobry {
+		right: 0;
+		bottom: 5%;
+		width: 25%;
+	}
+}
+@media(min-width: 1024px) {
+	.maxa-bingo-2026 .container {
+		max-width: 900px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.maxa-bingo-2026 .top-banner-content {
+		padding: 0;
+	}
+	.maxa-bingo-2026 .site-header {
+		height: 110px;
+	}
+	.maxa-bingo-2026 .bingo-box-wrapper-top {
+		background-size: 53%;
+	}
+	.maxa-bingo-2026 .navigation-wrapper-desktop {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		width: 100%;
+		padding: 1em 0 0;
+	}
+	.maxa-bingo-2026 .navigation-wrapper-mobile {
+		display: none;
+	}
+	.maxa-bingo-2026 .navigation-wrapper-desktop .navigation-modify-container {
+		gap: 40px;
+	}
+}
+@media(min-width: 1280px) {
+	.maxa-bingo-2026 .container {
+		max-width: 1070px;
+	}
+	.maxa-bingo-2026 .navigation-wrapper-desktop .navigation-modify-container {
+		gap: 80px;
+	}
+	.maxa-bingo-2026 .navigation-wrapper-desktop ul {
+		gap: 30px;
+	}
+	.maxa-bingo-2026 .bingo-box-wrapper-top {
+		background-size: 45%;
+	}
+	.badge-velky-dobry {
+		right: 0;
+        bottom: 0;
+        width: 23%;
+	}
+}
+@media(min-width: 1600px) {
+	.maxa-bingo-2026 .container {
+		max-width: 1100px;
+	}
+	.maxa-bingo-2026 .navigation-wrapper-desktop .navigation-modify-container {
+		gap: 120px;
+	}
+}
