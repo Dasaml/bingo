@@ -1022,23 +1022,6 @@ body.maxa-bingo-2026 {
 		bottom: 5%;
 		width: 25%;
 	}
-}
-@media(min-width: 1024px) {
-	.maxa-bingo-2026 .container {
-		max-width: 900px;
-		padding-left: 0;
-		padding-right: 0;
-	}
-	
-	.maxa-bingo-2026 .top-banner-content {
-		padding: 0;
-	}
-	.maxa-bingo-2026 .site-header {
-		height: 110px;
-	}
-	.maxa-bingo-2026 .bingo-box-wrapper-top {
-		background-size: 53%;
-	}
 	.maxa-bingo-2026 .navigation-wrapper-desktop {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -1056,9 +1039,29 @@ body.maxa-bingo-2026 {
 		width: 100%;
 		padding: 1em 0 0;
 	}
+	.maxa-bingo-2026 .site-header {
+		height: 110px;
+	}
 	.maxa-bingo-2026 .navigation-wrapper-mobile {
 		display: none;
 	}
+}
+@media(min-width: 1024px) {
+	.maxa-bingo-2026 .container {
+		max-width: 900px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.maxa-bingo-2026 .top-banner-content {
+		padding: 0;
+	}
+	
+	.maxa-bingo-2026 .bingo-box-wrapper-top {
+		background-size: 53%;
+	}
+	
+	
 	.maxa-bingo-2026 .navigation-wrapper-desktop .navigation-modify-container {
 		gap: 40px;
 	}
