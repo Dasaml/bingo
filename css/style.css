@@ -540,10 +540,6 @@ body.maxa-bingo-2026 {
   transform: translateY(2px);
   box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
 }
-.maxa-bingo-2026 .winning-shapes-section, 
-.maxa-bingo-2026 .carousel-container {
-    overflow-x: hidden;
-}
 .maxa-bingo-2026 .winning-shapes-section {
   width: 100%;
   background-color: #f0e95e;
@@ -560,10 +556,10 @@ body.maxa-bingo-2026 {
   margin: 0 0 30px;
 }
 .maxa-bingo-2026 .carousel-container {
-  width: 100%;
-    max-width: 100vw;
-    overflow-x: hidden;
-    margin: 0 auto;
+	width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Toto zajistí, že cokoli vyčnívá, nebude vidět */
+    position: relative;
 }
 .maxa-bingo-2026 .carousel-track {
   display: flex;
@@ -575,6 +571,7 @@ body.maxa-bingo-2026 {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
   box-sizing: border-box;
   padding: 0;
 }
