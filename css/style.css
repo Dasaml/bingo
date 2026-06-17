@@ -1,12 +1,12 @@
 @font-face {
-	font-family: "Maxa Grotesk"; 
+	font-family: "Maxa Grotesk";
 	src: url("../fonts/Maxa-Grotesk-Regular.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
-	font-family: "Maxa Grotesk"; 
+	font-family: "Maxa Grotesk";
 	src: url("../fonts/Maxa-Grotesk-Bold.woff2") format("woff2");
 	font-weight: 700;
 	font-style: normal;
@@ -476,7 +476,7 @@ body.maxa-bingo-2026 {
 	border-radius: 50%;
 	filter: blur(4px);
 	opacity: 0;
-	box-shadow: 
+	box-shadow:
 	inset -2px -2px 6px rgba(0, 0, 0, 0.15),
 	0 10px 25px rgba(0, 0, 0, 0.35);
 }
@@ -524,6 +524,7 @@ body.maxa-bingo-2026 {
 	padding: 1em;
 }
 .maxa-bingo-2026 .action-bar {
+	background-color: #500cba;
 	padding: 50px 0;
 }
 .maxa-bingo-2026 .action-bar-inner {
@@ -625,7 +626,9 @@ body.maxa-bingo-2026 {
 .maxa-bingo-2026 .carousel-slide img {
 	display: block;
 	max-width: 95%;
-	height: auto;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
 }
 .maxa-bingo-2026 .carousel-dots {
 	display: -webkit-box;
