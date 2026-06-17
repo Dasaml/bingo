@@ -557,23 +557,22 @@ body.maxa-bingo-2026 {
 }
 .maxa-bingo-2026 .carousel-container {
 	width: 100%;
-    max-width: 100%;
-    overflow: hidden; /* Toto zajistí, že cokoli vyčnívá, nebude vidět */
+    overflow-x: clip; /* Zkus toto místo overflow: hidden */
     position: relative;
+    contain: layout;  /* Lepší pro výkon a stabilitu */
 }
 .maxa-bingo-2026 .carousel-track {
   display: flex;
-  transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
-  width: 100%; /* Toto je v pořádku */
-  flex-wrap: nowrap; /* Zabrání zalamování, které by mohlo rozbít šířku */
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
 }
 .maxa-bingo-2026 .carousel-slide {
-  flex: 0 0 100%; /* Každý slide je přesně 100 % šířky kontejneru */
-  min-width: 100%; /* PŘIDEJ TOTO: Nutí slide držet šířku 100 % i v iOS */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  flex: 0 0 100%;
+    min-width: 100%; /* Toto drží slide v rámci kontejneru */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 .maxa-bingo-2026 .carousel-slide img {
 	display: block;
@@ -867,6 +866,49 @@ body.maxa-bingo-2026 {
 	color: #ffffff;
 	text-decoration: underline;
 }
+.maxa-bingo-2026 .site-footer .text-image-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 0 0 2em;
+}
+.maxa-bingo-2026 .site-footer .footer-warning {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	gap: 10px;
+}
+.maxa-bingo-2026 .footer-warning img {
+	width: auto;
+	height: 30px;
+}
+.maxa-bingo-2026 .footer-warning p {
+	color: #ffffff;
+	font-size: .9rem;
+	font-weight: 400;
+	text-align: left;
+	margin: 0;
+}
 
 @media (min-width: 480px) {
   .maxa-bingo-2026 .games-grid {
@@ -916,6 +958,9 @@ body.maxa-bingo-2026 {
 	}
 	.maxa-bingo-2026 .winning-shapes-section {
 		padding: 60px 0;
+	}
+	.maxa-bingo-2026 .carousel-slide {
+		
 	}
 	.maxa-bingo-2026 .games-jackpots-section {
 		padding: 60px 0;
