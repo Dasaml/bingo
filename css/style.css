@@ -564,16 +564,16 @@ body.maxa-bingo-2026 {
 .maxa-bingo-2026 .carousel-track {
   display: flex;
   transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
-  width: 100%;
+  width: 100%; /* Toto je v pořádku */
+  flex-wrap: nowrap; /* Zabrání zalamování, které by mohlo rozbít šířku */
 }
 .maxa-bingo-2026 .carousel-slide {
-  flex: 0 0 100%;
+  flex: 0 0 100%; /* Každý slide je přesně 100 % šířky kontejneru */
+  min-width: 100%; /* PŘIDEJ TOTO: Nutí slide držet šířku 100 % i v iOS */
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
   box-sizing: border-box;
-  padding: 0;
 }
 .maxa-bingo-2026 .carousel-slide img {
 	display: block;
