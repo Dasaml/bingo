@@ -119,12 +119,12 @@ body.maxa-bingo-2026 {
 	background: linear-gradient(101deg, rgba(255,93,126,1) 4%, rgba(96,0,191,1) 100%);
 }
 .maxa-bingo-2026 .container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
 }
 .maxa-bingo-2026 .pb-05 {
 	padding-bottom: .5em;
@@ -354,15 +354,19 @@ body.maxa-bingo-2026 {
 }
 /* Desktop menu end */
 .maxa-bingo-2026 .section.top-banner {
-    position: relative;
-    overflow: hidden; /* Toto je nejdůležitější řádek pro mobil */
-    width: 100vw;    /* Vynutí šířku přesně na šířku okna */
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
 }
 .maxa-bingo-2026 .top-banner-image {
 	position: relative;
-  display: flex;
-  justify-content: center;
-  width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
 }
 .maxa-bingo-2026 .top-img-mobile {
 	display: block;
@@ -371,23 +375,25 @@ body.maxa-bingo-2026 {
 	height: auto;
 }
 .maxa-bingo-2026 .steam-animation-mobile {
-    position: absolute;
-    top: 32%;
-    left: 57%;
-    width: 50px;
-    height: 25px;
-    z-index: 10;
-    pointer-events: none;
+	position: absolute;
+	top: 32%;
+	left: 57%;
+	width: 50px;
+	height: 25px;
+	z-index: 10;
+	pointer-events: none;
 }
 .maxa-bingo-2026 .steam-animation-mobile::after {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    filter: blur(5px);
-    animation: blowSteam 4s infinite ease-out;
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 50%;
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+	-webkit-animation: blowSteam 4s infinite ease-out;
+	animation: blowSteam 4s infinite ease-out;
 }
 .maxa-bingo-2026 .site-main {
 	position: relative;
@@ -422,9 +428,18 @@ body.maxa-bingo-2026 {
 }
 .maxa-bingo-2026 .bingo-box-wrapper-top {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	margin: 0 auto;
 	padding: 3em 0 0;
@@ -466,14 +481,15 @@ body.maxa-bingo-2026 {
 	0 10px 25px rgba(0, 0, 0, 0.35);
 }
 .steam-left {
-    left: 0;
-    animation: blowSteam 3.8s infinite ease-in-out;
+	left: 0;
+	-webkit-animation: blowSteam 3.8s infinite ease-in-out;
+	animation: blowSteam 3.8s infinite ease-in-out;
 }
 .steam-right {
-    right: 0;
-    animation: blowSteam 3.8s infinite ease-in-out;
+	right: 0;
+	-webkit-animation: blowSteam 3.8s infinite ease-in-out;
+	animation: blowSteam 3.8s infinite ease-in-out;
 }
-
 .maxa-bingo-2026 .top-banner-content {
 	position: relative;
 	z-index: 5;
@@ -496,20 +512,35 @@ body.maxa-bingo-2026 {
 	pointer-events: none;
 }
 .maxa-bingo-2026 .top-banner-image {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 1em;
 }
 .maxa-bingo-2026 .action-bar {
 	padding: 50px 0;
 }
 .maxa-bingo-2026 .action-bar-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 30px;
 }
 .maxa-bingo-2026 .action-bar-inner .btn-action {
 	background-color: #f0e95e;
@@ -534,44 +565,62 @@ body.maxa-bingo-2026 {
 	transition: all .3s ease-in-out;
 }
 .maxa-bingo-2026 .btn-action:hover {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+	-webkit-transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	transform: translateY(2px);
+	-webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
 }
 .maxa-bingo-2026 .winning-shapes-section {
-  width: 100%;
-  background-color: #f0e95e;
-  padding: 40px 0;
-  text-align: center;
-  overflow: hidden;
+	width: 100%;
+	background-color: #f0e95e;
+	padding: 40px 0;
+	text-align: center;
+	overflow: hidden;
 }
 .maxa-bingo-2026 .shapes-title {
-  font-size: 1.8rem;
-  line-height: 1.1;
-  font-weight: 900;
-  color: #500cba;
-  text-transform: uppercase;
-  margin: 0 0 30px;
+	font-size: 1.8rem;
+	line-height: 1.1;
+	font-weight: 900;
+	color: #500cba;
+	text-transform: uppercase;
+	margin: 0 0 30px;
 }
 .maxa-bingo-2026 .carousel-container {
 	width: 100%;
-    position: relative;
-    overflow: hidden; /* Vrať se k hidden, ale přidej pod ním 'isolation' */
-    isolation: isolate; /* Klíčové: toto vytvoří nový 'stacking context' a Safari přestane řešit přesahy ven */
+	position: relative;
+	overflow: hidden;
+	isolation: isolate;
 }
 .maxa-bingo-2026 .carousel-track {
-  display: flex;
-    width: 100%; /* Tohle máš dobře */
-    flex-wrap: nowrap; /* Důležité: nedovolí slidu přeskočit dolů */
-    transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
+	transition: -webkit-transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
+	transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
+	transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1), -webkit-transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
 }
 .maxa-bingo-2026 .carousel-slide {
-  flex: 1 0 100%; /* Změněno z 0 0 na 1 0 - dovolí slidu se přizpůsobit */
-    min-width: 100%;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 100%;
+	flex: 1 0 100%;
+	min-width: 100%;
+	max-width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .maxa-bingo-2026 .carousel-slide img {
 	display: block;
@@ -579,38 +628,59 @@ body.maxa-bingo-2026 {
 	height: auto;
 }
 .maxa-bingo-2026 .carousel-dots {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	gap: 12px;
+	margin-top: 30px;
 }
 .maxa-bingo-2026 .dot {
-  width: 12px;
-  height: 12px;
-  background-color: #bfa6ff;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+	width: 12px;
+	height: 12px;
+	background-color: #bfa6ff;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 .maxa-bingo-2026 .dot.active {
-  background-color: #4a00b6;
+	background-color: #4a00b6;
 }
 .maxa-bingo-2026 .games-jackpots-section {
-  width: 100%;
-  padding: 40px 0;
-  box-sizing: border-box;
+	width: 100%;
+	padding: 40px 0;
+	box-sizing: border-box;
 }
 .maxa-bingo-2026 .games-grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
 }
 .maxa-bingo-2026 .game-card {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	text-align: center;
 	width: 100%;
@@ -618,34 +688,42 @@ body.maxa-bingo-2026 {
 	padding: 0 0 30px;
 }
 .maxa-bingo-2026 .game-image-wrapper {
-  width: 100%;
-  margin-bottom: 30px;
+	width: 100%;
+	margin-bottom: 30px;
 }
 .maxa-bingo-2026 .game-image-wrapper img {
-  display: block;
-  width: 100%;
-  height: auto;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
 }
 .maxa-bingo-2026 .game-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
 }
 .maxa-bingo-2026 .game-jackpot-label {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #ffffff;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #ffffff;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 .maxa-bingo-2026 .game-jackpot-value {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: #eaf625;
-  margin-bottom: 35px;
-  white-space: nowrap;
+	font-size: 2.5rem;
+	font-weight: 900;
+	color: #eaf625;
+	margin-bottom: 35px;
+	white-space: nowrap;
 }
 .maxa-bingo-2026 .btn-play {
 	background-color: #f0e95e;
@@ -671,8 +749,11 @@ body.maxa-bingo-2026 {
 	transition: all .3s ease-in-out;
 }
 .maxa-bingo-2026 .btn-play:hover {
-  transform: translateY(2px);
-  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+	-webkit-transform: translateY(2px);
+	-ms-transform: translateY(2px);
+	transform: translateY(2px);
+	-webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
 }
 
 .maxa-bingo-2026 .bingo-90 .bingo-box-wrapper {
@@ -763,7 +844,7 @@ body.maxa-bingo-2026 {
 	-webkit-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
 	-moz-box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
 	box-shadow: 0px 10px 15px 0px rgba(57,55,61,1);
-	color: #8d3ddc;
+	color: #500cba;
 	padding: 15px 40px;
 	text-align: center;
 	text-decoration: none;
@@ -779,7 +860,7 @@ body.maxa-bingo-2026 {
 }
 .maxa-bingo-2026 .bingo-button:hover {
 	transform: translateY(2px);
-  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
 }
 .maxa-bingo-2026 .bingo-btn-wrapper {
 	margin: 0 auto;
@@ -794,14 +875,27 @@ body.maxa-bingo-2026 {
 	padding: 3em 0;
 }
 .maxa-bingo-2026 .tutorials-col-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
 	align-items: flex-start;
 	gap: 30px;
 }
 .maxa-bingo-2026 .tutorials-col-inner .col {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	width: 100%;
 }
@@ -810,7 +904,7 @@ body.maxa-bingo-2026 {
 	height: 100%;
 	aspect-ratio: 9 / 16;
 	max-width: 315px;
-  max-height: 560px;
+	max-height: 560px;
 	border: 0;
 	overflow: hidden;
 }
@@ -905,17 +999,22 @@ body.maxa-bingo-2026 {
 }
 
 @media (min-width: 480px) {
-  .maxa-bingo-2026 .games-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px 30px;
-  }
-  .maxa-bingo-2026 .game-card {
-    width: calc(50% - 20px);
-    max-width: 240px;
-  }
-  
+	.maxa-bingo-2026 .games-grid {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		gap: 40px 30px;
+	}
+	.maxa-bingo-2026 .game-card {
+		width: calc(50% - 20px);
+		max-width: 240px;
+	}
 }
 
 @media(min-width: 768px) {
@@ -939,9 +1038,18 @@ body.maxa-bingo-2026 {
 		font-size: 4.3rem;
 	}
 	.maxa-bingo-2026 .action-bar-inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
 		flex-direction: row;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
 		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 		gap: 50px;
 	}
