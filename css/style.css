@@ -56,8 +56,7 @@ body.maxa-bingo-2026 {
 	color: #000;
 	background-color: #500cba;
 	scroll-behavior: smooth;
-	overflow-x: hidden;
-    -webkit-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 .maxa-bingo-2026 .title-h1 {
 	color: #ffffff;
@@ -540,6 +539,10 @@ body.maxa-bingo-2026 {
 .maxa-bingo-2026 .btn-action:hover {
   transform: translateY(2px);
   box-shadow: 0 2px 0px rgba(0, 0, 0, 0.3);
+}
+.maxa-bingo-2026 .winning-shapes-section, 
+.maxa-bingo-2026 .carousel-container {
+    overflow-x: hidden;
 }
 .maxa-bingo-2026 .winning-shapes-section {
   width: 100%;
