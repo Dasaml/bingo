@@ -125,6 +125,8 @@ body.maxa-bingo-2026 {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+  max-width: 100%;
+    overflow: hidden;
 }
 .maxa-bingo-2026 .pb-05 {
 	padding-bottom: .5em;
