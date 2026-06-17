@@ -125,8 +125,6 @@ body.maxa-bingo-2026 {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
-  max-width: 100%;
-    overflow: hidden;
 }
 .maxa-bingo-2026 .pb-05 {
 	padding-bottom: .5em;
@@ -355,6 +353,11 @@ body.maxa-bingo-2026 {
 	padding: .5em;
 }
 /* Desktop menu end */
+.maxa-bingo-2026 .section.top-banner {
+    position: relative;
+    overflow: hidden; /* Toto je nejdůležitější řádek pro mobil */
+    width: 100vw;    /* Vynutí šířku přesně na šířku okna */
+}
 .maxa-bingo-2026 .top-banner-image {
 	position: relative;
   display: flex;
@@ -438,6 +441,7 @@ body.maxa-bingo-2026 {
 	display: block;
 	pointer-events: none;
 	z-index: 2;
+	overflow: hidden;
 }
 .bull-steam-emitter {
 	display: none;
@@ -570,13 +574,13 @@ body.maxa-bingo-2026 {
     transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
 }
 .maxa-bingo-2026 .carousel-slide {
-  flex: 0 0 100%; /* Toto je pevný základ */
+  flex: 1 0 100%; /* Změněno z 0 0 na 1 0 - dovolí slidu se přizpůsobit */
     min-width: 100%;
     max-width: 100%;
-    /* Přidej toto, pokud tam máš nějaké vnitřní odsazení */
-    box-sizing: border-box; 
-    /* A toto je velmi důležité pro Safari: */
-    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 .maxa-bingo-2026 .carousel-slide img {
 	display: block;
