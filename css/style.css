@@ -557,9 +557,9 @@ body.maxa-bingo-2026 {
 }
 .maxa-bingo-2026 .carousel-container {
 	width: 100%;
-    overflow-x: clip; /* Zkus toto místo overflow: hidden */
     position: relative;
-    contain: layout;  /* Lepší pro výkon a stabilitu */
+    overflow: hidden; /* Vrať se k hidden, ale přidej pod ním 'isolation' */
+    isolation: isolate; /* Klíčové: toto vytvoří nový 'stacking context' a Safari přestane řešit přesahy ven */
 }
 .maxa-bingo-2026 .carousel-track {
   display: flex;
@@ -567,8 +567,9 @@ body.maxa-bingo-2026 {
     transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
 }
 .maxa-bingo-2026 .carousel-slide {
-  flex: 0 0 100%;
-    min-width: 100%; /* Toto drží slide v rámci kontejneru */
+  flex: 1 0 100%; /* Změněno z 0 0 na 1 0 - dovolí slidu se přizpůsobit */
+    min-width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -960,7 +961,7 @@ body.maxa-bingo-2026 {
 		padding: 60px 0;
 	}
 	.maxa-bingo-2026 .carousel-slide {
-		
+
 	}
 	.maxa-bingo-2026 .games-jackpots-section {
 		padding: 60px 0;
