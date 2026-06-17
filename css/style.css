@@ -563,17 +563,18 @@ body.maxa-bingo-2026 {
 }
 .maxa-bingo-2026 .carousel-track {
   display: flex;
-    width: 100%;
+    width: 100%; /* Tohle máš dobře */
+    flex-wrap: nowrap; /* Důležité: nedovolí slidu přeskočit dolů */
     transition: transform 0.5s cubic-bezier(0.45, 0, 0.55, 1);
 }
 .maxa-bingo-2026 .carousel-slide {
-  flex: 1 0 100%; /* Změněno z 0 0 na 1 0 - dovolí slidu se přizpůsobit */
+  flex: 0 0 100%; /* Toto je pevný základ */
     min-width: 100%;
     max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+    /* Přidej toto, pokud tam máš nějaké vnitřní odsazení */
+    box-sizing: border-box; 
+    /* A toto je velmi důležité pro Safari: */
+    flex-shrink: 0;
 }
 .maxa-bingo-2026 .carousel-slide img {
 	display: block;
