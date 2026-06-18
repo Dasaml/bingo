@@ -14,27 +14,27 @@
 }
 
 @keyframes blowSteam {
-    0% {
-        transform: translateY(0) translateX(0) scale(0.4);
-        opacity: 0;
-    }
-    18% {
-        opacity: 0.85;
-        transform: translateY(-10px) translateX(-5px) scale(1.1);
-    }
-    60% {
-        opacity: 0.98;
-        transform: translateY(-60px) translateX(-50px) scale(2.4);
-    }
-    82% {
-        opacity: 0.55;
-        transform: translateY(-110px) translateX(-100px) scale(3.2);
-    }
-    100% {
-        transform: translateY(-150px) translateX(-140px) scale(4);
-        opacity: 0;
-        filter: blur(16px);
-    }
+	0% {
+		transform: translateY(0) translateX(0) scale(0.4);
+		opacity: 0;
+	}
+	18% {
+		opacity: 0.85;
+		transform: translateY(-10px) translateX(-5px) scale(1.1);
+	}
+	60% {
+		opacity: 0.98;
+		transform: translateY(-60px) translateX(-50px) scale(2.4);
+	}
+	82% {
+		opacity: 0.55;
+		transform: translateY(-110px) translateX(-100px) scale(3.2);
+	}
+	100% {
+		transform: translateY(-150px) translateX(-140px) scale(4);
+		opacity: 0;
+		filter: blur(16px);
+	}
 }
 
 html {
@@ -426,6 +426,8 @@ body.maxa-bingo-2026 {
 	position: absolute;
 	width: 70px;
 	height: auto;
+	-webkit-filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.4));
+	filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.4));
 }
 .maxa-bingo-2026 .bingo-90 .ball-left {
 	bottom: 15%;
