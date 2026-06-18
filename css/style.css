@@ -399,14 +399,77 @@ body.maxa-bingo-2026 {
 	position: relative;
 }
 .maxa-bingo-2026 .section {
+	position: relative;
 	width: 100%;
 	max-width: 100%;
 	scroll-margin-top: 5em;
 }
 .maxa-bingo-2026 .bingo-90 {
+	position: relative;
 	margin-top: 0;
 	padding-bottom: 3em;
 }
+.maxa-bingo-2026 .balls-container {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	pointer-events: none;
+	z-index: 1;
+}
+.maxa-bingo-2026 .floating-ball {
+	position: absolute;
+	width: 70px;
+	height: auto;
+}
+.maxa-bingo-2026 .bingo-90 .ball-left {
+	bottom: 15%;
+	left: 20%;
+}
+.maxa-bingo-2026 .bingo-90 .ball-right {
+	bottom: 15%;
+  right: 20%;
+}
+.maxa-bingo-2026 .bingo-75 .ball-left {
+	bottom: 5%;
+	left: 20%;
+}
+.maxa-bingo-2026 .bingo-75 .ball-right {
+	bottom: 20%;
+  right: 20%;
+}
+.maxa-bingo-2026 .bingo-75 .ball-right-pink {
+	bottom: -9%;
+  right: 27%;
+}
+
+.maxa-bingo-2026 .bingo-jackpot .ball-left {
+	top: -9%;
+    left: 42%;
+}
+.maxa-bingo-2026 .bingo-jackpot .ball-right {
+top: -9%;
+    right: 20%;
+}
+.maxa-bingo-2026 .bingo-jackpot .ball-right-fiolet {
+	bottom: -18%;
+    right: 55%;
+}
+
+.maxa-bingo-2026 .bingo-registrace .ball-left {
+	bottom: 1%;
+    left: 13%;
+}
+.maxa-bingo-2026 .bingo-registrace .ball-right {
+bottom: -9%;
+    right: 22%;
+}
+
 .maxa-bingo-2026 .bingo-box-content {
 	width: 100%;
 }
@@ -1056,7 +1119,6 @@ body.maxa-bingo-2026 {
 		align-items: center;
 		gap: 50px;
 	}
-	
 	.maxa-bingo-2026 .shapes-title {
 		font-size: 2.2rem;
 		margin: 0 0 30px;
@@ -1093,7 +1155,6 @@ body.maxa-bingo-2026 {
 	.maxa-bingo-2026 .bingo-box-img {
 		width: 150px;
 	}
-	
 	.maxa-bingo-2026 .bingo-win .bingo-box-wrapper {
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -1146,6 +1207,9 @@ body.maxa-bingo-2026 {
 	}
 }
 @media(min-width: 992px) {
+	.maxa-bingo-2026 .balls-container {
+		display: block;
+	}
 	.bull-steam-emitter {
 		display: block;
 	}
